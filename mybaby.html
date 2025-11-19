@@ -605,175 +605,175 @@ body {
 
 
 
-.gallery {
+    .gallery {
 
-  display: grid;
+    display: grid;
 
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 
-  gap: 20px;
+    gap: 20px;
 
-}
+    }
 
-.gallery-item {
+    .gallery-item {
 
-  position: relative;
+    position: relative;
 
-  border-radius: 15px;
+    border-radius: 15px;
 
-  overflow: hidden;
+    overflow: hidden;
 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 
-  transition: transform 0.3s;
+    transition: transform 0.3s;
 
-  height: 180px;
+    height: 180px;
 
-  cursor: pointer;
+    cursor: pointer;
 
-}
+    }
 
-.gallery-item:hover { transform: translateY(-5px) rotate(2deg); box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); }
+    .gallery-item:hover { transform: translateY(-5px) rotate(2deg); box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); }
 
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
 
-.gallery-item:hover img { transform: scale(1.1); }
+    .gallery-item:hover img { transform: scale(1.1); }
 
-.gallery-caption {
+    .gallery-caption {
 
-  position: absolute;
+    position: absolute;
 
-  bottom: 0; left: 0; right: 0;
+    bottom: 0; left: 0; right: 0;
 
-  background-color: rgba(255, 102, 178, 0.85);
+    background-color: rgba(255, 102, 178, 0.85);
 
-  color: white;
+    color: white;
 
-  padding: 8px;
+    padding: 8px;
 
-  text-align: center;
+    text-align: center;
 
-  font-size: 14px;
+    font-size: 14px;
 
-  font-weight: bold;
+    font-weight: bold;
 
-}
+    }
 
 
 
-/* ✅ Lightbox Styles */
+    /* ✅ Lightbox Styles */
 
-.lightbox {
+    .lightbox {
 
-  position: fixed;
+    position: fixed;
 
-  top: 0; left: 0;
+    top: 0; left: 0;
 
-  width: 100vw; height: 100vh;
+    width: 100vw; height: 100vh;
 
-  background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.85);
 
-  display: none;
+    display: none;
 
-  justify-content: center;
+    justify-content: center;
 
-  align-items: center;
+    align-items: center;
 
-  z-index: 999;
+    z-index: 999;
 
-}
+    }
 
-.lightbox.active { display: flex; }
+    .lightbox.active { display: flex; }
 
 
 
-.lightbox img {
+    .lightbox img {
 
-  max-width: 90%;
+    max-width: 90%;
 
-  max-height: 80%;
+    max-height: 80%;
 
-  border-radius: 15px;
+    border-radius: 15px;
 
-  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
 
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
-}
+    }
 
 
 
-.lightbox-close,
+    .lightbox-close,
 
-.lightbox-prev,
+    .lightbox-prev,
 
-.lightbox-next {
+    .lightbox-next {
 
-  position: absolute;
+    position: absolute;
 
-  color: white;
+    color: white;
 
-  font-size: 40px;
+    font-size: 40px;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.15);
 
-  border-radius: 50%;
+    border-radius: 50%;
 
-  padding: 10px 15px;
+    padding: 10px 15px;
 
-  transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s;
 
-  user-select: none;
+    user-select: none;
 
-}
+    }
 
-.lightbox-close:hover,
+    .lightbox-close:hover,
 
-.lightbox-prev:hover,
+    .lightbox-prev:hover,
 
-.lightbox-next:hover {
+    .lightbox-next:hover {
 
-  background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
 
-  transform: scale(1.1);
+    transform: scale(1.1);
 
-}
+    }
 
 
 
-.lightbox-close { top: 20px; right: 25px; font-size: 32px; }
+    .lightbox-close { top: 20px; right: 25px; font-size: 32px; }
 
-.lightbox-prev { left: 30px; }
+    .lightbox-prev { left: 30px; }
 
-.lightbox-next { right: 30px; }
+    .lightbox-next { right: 30px; }
 
-@media (max-width: 600px) {
+    @media (max-width: 600px) {
 
-  .lightbox-prev, .lightbox-next { font-size: 28px; padding: 8px 12px; }
+    .lightbox-prev, .lightbox-next { font-size: 28px; padding: 8px 12px; }
 
-}
+    }
 
 
 
-.footer {
+    .footer {
 
-  text-align: center;
+    text-align: center;
 
-  padding: 20px;
+    padding: 20px;
 
-  background-color: #ffebf3;
+    background-color: #ffebf3;
 
-  color: #ff66b2;
+    color: #ff66b2;
 
-  font-weight: bold;
+    font-weight: bold;
 
-}
+    }
 
 
 
-.notes-list { list-style-type: none; }
+    .notes-list { list-style-type: none; }
 
         .notes-list li {
 
@@ -825,50 +825,62 @@ body {
 
 
 
-<!-- ✅ Lightbox (added for gallery expand/next/prev) -->
+    <!-- ✅ Lightbox (added for gallery expand/next/prev) -->
 
-<div class="lightbox" id="lightbox">
+    <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <span class="lightbox-prev" id="lightboxPrev">&#10094;</span>
 
-  <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <!-- Image & Video -->
+    <img src="" alt="Expanded photo" id="lightboxImg">
+    <video id="lightboxVideo" controls style="display:none; max-width:90%; max-height:80%; border-radius:15px;"></video>
 
-  <span class="lightbox-prev" id="lightboxPrev">&#10094;</span>
-
-  <img src="" alt="Expanded photo" id="lightboxImg">
-
-  <span class="lightbox-next" id="lightboxNext">&#10095;</span>
-
-</div>
-
+    <span class="lightbox-next" id="lightboxNext">&#10095;</span>
+    </div>
 
 
-<!-- 💖 Your existing website starts here -->
+    <div class="lightbox" id="lightbox">
 
-<div class="welcome-screen" id="welcomeScreen">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
 
-  <div class="password-form">
+    <span class="lightbox-prev" id="lightboxPrev">&#10094;</span>
 
-    <h2> Access denied… unless you know the magic word 🤭
- </h2>
+    <img src="" alt="Expanded photo" id="lightboxImg">
 
-    <input type="password" class="password-input" id="passwordInput" placeholder="magic word here...">
-
-    <button class="submit-btn" id="submitBtn">Enter</button>
-
-  </div>
-
-</div>
-
-
-
-<div class="welcome-message" id="welcomeMessage">
-
-        <h2>It’s Your Day, My Girl💖</h2>
-
-        <p>Let Me Spoil You</p>
-
-        <button class="welcome-close-btn" id="welcomeCloseBtn">Start Exploring</button>
+    <span class="lightbox-next" id="lightboxNext">&#10095;</span>
 
     </div>
+
+
+
+    <!-- 💖 Your existing website starts here -->
+
+    <div class="welcome-screen" id="welcomeScreen">
+
+    <div class="password-form">
+
+        <h2> Access denied… unless you know the magic word 🤭
+    </h2>
+
+        <input type="password" class="password-input" id="passwordInput" placeholder="magic word here...">
+
+        <button class="submit-btn" id="submitBtn">Enter</button>
+
+    </div>
+
+    </div>
+
+
+
+    <div class="welcome-message" id="welcomeMessage">
+
+            <h2>It’s Your Day, My Girl💖</h2>
+
+            <p>Let Me Spoil You</p>
+
+            <button class="welcome-close-btn" id="welcomeCloseBtn">Start Exploring</button>
+
+        </div>
 
 
 
@@ -939,7 +951,7 @@ body {
 
                         Happy birthday, my baby❣. And before anything else… thank you.<br>
 
-First of all po, I just want to say thank you for being you and for being with me even though it seems like the weather isn’t really okay with us. Thank you for staying with us even if there are a lot of challenges and there are a lot of moments when it feels like the world is against us. I will never forget all your sacrifices, your efforts, your tiredness, and most especially, the time you spend just to be with me. Those things meant more to me than you’ll ever know. You made me feel important, chosen, and worth fighting for. <br> <br>
+I just want to say thank you for being you and for being with me even though it seems like the weather isn’t really okay with us. Thank you for staying with me even if there are a lot of challenges and there are a lot of moments when it feels like the world is against us. I will never forget all your sacrifices, your efforts, your tiredness, and most especially, the time you spend just to be with me. Those things meant more to me than you’ll ever know. You made me feel important, chosen, and worth fighting for. <br> <br>
 
 You know, I just love every moment with you po. It feels like a treasure. Your simple messages, corny jokes, and laughter. They mean a lot to me!❣ Are you okay? I’m worried. I can’t imagine my life without you, and I promise I’ll always wait for you my baby and I will keep all my promises po sayo especially po yung aantayin kita kahit gano pa katagal yan ❣, kahit na po wala akong kasiguraduhan kung pag tatagpuin pa tayo ulit. <br> <br>
 
@@ -974,11 +986,22 @@ Happy birthday, baby❣. Thanks for being you, for all you tried to give, and al
                 <br>
             
                 <div class="music-buttons">
+
+                    <li>
+                        Look After You  - The Fray
+                        <button class="song-btn" data-src="musicsong11.mp3"><i class="fas fa-play"></i></button>
+                      </li>
+                      
                       <li>
                         Nobody Else - LANY
                         <button class="song-btn" data-src="musicsong1.mp3"><i class="fas fa-play"></i></button>
                       </li>
                       
+                      <li>
+                         Supernatural - Ariana Grande
+                        <button class="song-btn" data-src="musicsong10.mp3"><i class="fas fa-play"></i></button>
+                    </li>
+
                       <li>
                         Pretty Eyes - Zehdi
                         <button class="song-btn" data-src="musicsong2.mp3"><i class="fas fa-play"></i></button>
@@ -990,13 +1013,18 @@ Happy birthday, baby❣. Thanks for being you, for all you tried to give, and al
                     </li>
 
                     <li>
-                        Perfect For Me - Bradley Marshall
-                        <button class="song-btn" data-src="musicsong4.mp3"><i class="fas fa-play"></i></button>
+                        Double Take - Dhruv
+                        <button class="song-btn" data-src="musicsong8.mp3"><i class="fas fa-play"></i></button>
                     </li>
                     
                     <li>
                         Make It To Me -Sam Smith 
                         <button class="song-btn" data-src="musicsong5.mp3"><i class="fas fa-play"></i></button>
+                    </li>
+
+                    <li>
+                        Take A Chance With Me - NIKI
+                        <button class="song-btn" data-src="musicsong9.mp3"><i class="fas fa-play"></i></button>
                     </li>
 
                     <li>
@@ -1007,6 +1035,10 @@ Happy birthday, baby❣. Thanks for being you, for all you tried to give, and al
                     <li>
                         Jump Then Fall - Taylor Swift
                         <button class="song-btn" data-src="musicsong7.mp3"><i class="fas fa-play"></i></button>
+                    </li>
+                    <li>
+                        Perfect For Me - Bradley Marshall
+                        <button class="song-btn" data-src="musicsong4.mp3"><i class="fas fa-play"></i></button>
                     </li>
             
                     
@@ -1031,23 +1063,25 @@ Happy birthday, baby❣. Thanks for being you, for all you tried to give, and al
 
                 <div class="gallery">
 
-                    <div class="gallery-item"><img src="images/photo1.jpg" alt=""><div class="gallery-caption">I love you forever - Red Carnation'</div></div>
+                    <div class="gallery-item"><img src="image1.jpg" alt=""><div class="gallery-caption">I love you forever</div></div>
 
-                    <div class="gallery-item"><img src="images/photo2.jpg" alt=""><div class="gallery-caption">Kasama kang Tumanda</div></div>
+                    <div class="gallery-item"><img src="image2.jpg" alt=""><div class="gallery-caption">Too cute to handle</div></div>
 
-                    <div class="gallery-item"><img src="images/photo3.jpg" alt=""><div class="gallery-caption">Goal? Goal!</div></div>
+                    <div class="gallery-item"><img src="images/photo3.jpg" alt=""><div class="gallery-caption">My favorite memories are spelled: YOU.</div></div>
 
                     <div class="gallery-item"><img src="images/photo4.jpg" alt=""><div class="gallery-caption">I wanted to wake up next to you and watch the sunrise</div></div>
 
-                    <div class="gallery-item"><img src="images/photo5.jpg" alt=""><div class="gallery-caption">You have the prettiest eyes I've ever seen</div></div>
+                    <div class="gallery-item"><img src="vid1.mp4" alt=""><div class="gallery-caption">MMy favorite memories are spelled: YOU.</div></div>
 
-                    <div class="gallery-item"><img src="images/photo6.jpg" alt=""><div class="gallery-caption">Too cute to handle</div></div>
+                    <div class="gallery-item" data-type="video" data-src="vid1.mp4"><video src="vid1.mp4" muted></video><div class="gallery-caption">Wishing I could go back to this moment.</div></div>
 
-                    <div class="gallery-item"><img src="images/photo7.jpg" alt=""><div class="gallery-caption">No Caption needed</div></div>
+                    <div class="gallery-item"><img src="images/photo7.jpg" alt=""><div class="gallery-caption">Kasama kang Tumanda</div></div>
 
                     <div class="gallery-item"><img src="images/photo8.jpg" alt=""><div class="gallery-caption">Soon, no more vc</div></div>
 
                     <div class="gallery-item"><img src="images/photo9.jpg" alt=""><div class="gallery-caption">Soon</div></div>
+
+                    <div class="gallery-item" data-type="video" data-src="vid2.mp4"><video src="vid2.mp4" muted></video><div class="gallery-caption">I can't get you out of my mind</div></div>
 
                 </div>
 
@@ -1095,65 +1129,70 @@ Happy birthday, baby❣. Thanks for being you, for all you tried to give, and al
 
 
 
-<div class="footer">Made with all my love ❤️</div>
+    <div class="footer">Made with all my love ❤️</div>
 
 
 
-<script>
+    <script>
 
 
 
-const tabs = document.querySelectorAll(".tab");
+    const tabs = document.querySelectorAll(".tab");
 
-const contents = document.querySelectorAll(".tab-content");
+    const contents = document.querySelectorAll(".tab-content");
 
-tabs.forEach(tab => {
+    tabs.forEach(tab => {
 
-  tab.addEventListener("click", () => {
+    tab.addEventListener("click", () => {
 
-    tabs.forEach(t => t.classList.remove("active"));
+        tabs.forEach(t => t.classList.remove("active"));
 
-    contents.forEach(c => c.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
 
-    tab.classList.add("active");
+        tab.classList.add("active");
 
-    document.getElementById(tab.dataset.tab).classList.add("active");
+        document.getElementById(tab.dataset.tab).classList.add("active");
 
-  });
+    });
 
-});
-
-
-
-document.getElementById("loveBtn").addEventListener("click", () => {
-
-  const msg = document.getElementById("secretMessage");
-
-  msg.style.display = msg.style.display === "block" ? "none" : "block";
-
-});
+    });
 
 
 
- const heartsContainer = document.getElementById("heartsContainer");
+    document.getElementById("loveBtn").addEventListener("click", () => {
 
-        for (let i = 0; i < 20; i++) {
+    const msg = document.getElementById("secretMessage");
 
-            const heart = document.createElement("div");
+    msg.style.display = msg.style.display === "block" ? "none" : "block";
 
-            heart.classList.add("heart");
+    });
 
-            heart.textContent = "💖";
 
-            heart.style.top = Math.random() * 100 + "%";
 
-            heart.style.left = Math.random() * 100 + "%";
+    const heartsContainer = document.getElementById("heartsContainer");
 
-            heart.style.animationDuration = 4 + Math.random() * 4 + "s";
 
-            heartsContainer.appendChild(heart);
+    function createHearts(count = 20) {
+    for (let i = 0; i < count; i++) {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.textContent = "💖";
+        heart.style.top = Math.random() * 100 + "%";
+        heart.style.left = Math.random() * 100 + "%";
+        heart.style.animationDuration = 4 + Math.random() * 4 + "s";
+        heartsContainer.appendChild(heart);
+    }
+    }
 
-        }
+
+    createHearts(20);
+
+
+    const galleryTab = document.querySelector('.tab[data-tab="gallery"]');
+    galleryTab.addEventListener("click", () => {
+    createHearts(15); 
+    });
+
 
 
 
@@ -1195,62 +1234,7 @@ document.getElementById("loveBtn").addEventListener("click", () => {
 
 
 
-        // 🎵 Cute music player buttons
-
-        /*const musicPlayer = document.getElementById("musicPlayer");
-
-        const songBtns = document.querySelectorAll(".song-btn");
-
-
-
-
-
-        songBtns.forEach(btn => {
-
-            btn.addEventListener("click", () => {
-
-                const isPlaying = btn.classList.contains("playing");
-
-                const src = btn.getAttribute("data-src");
-
-
-
-
-
-                songBtns.forEach(b => {
-
-                    b.classList.remove("playing");
-
-                    b.innerHTML = '<i class="fas fa-play"></i>';
-
-                });
-
-
-
-
-
-                if (!isPlaying) {
-
-                    musicPlayer.src = src;
-
-                    musicPlayer.play();
-
-                    btn.classList.add("playing");
-
-                    btn.innerHTML = '<i class="fas fa-pause"></i>';
-
-                    makeHeart(btn);
-
-                } else {
-
-                    musicPlayer.pause();
-
-                }
-
-            });
-
-        });*/
-
+       
         const musicPlayer = document.getElementById("bgMusic");
 const songBtns = document.querySelectorAll(".song-btn");
 
@@ -1259,20 +1243,20 @@ songBtns.forEach(btn => {
         const src = btn.getAttribute("data-src");
         const isPlaying = btn.classList.contains("playing");
 
-        // Reset all buttons
+        
         songBtns.forEach(b => {
             b.classList.remove("playing");
             b.innerHTML = '<i class="fas fa-play"></i>';
         });
 
         if (!isPlaying) {
-            // Play selected song
+            
             musicPlayer.src = src;
             musicPlayer.play();
             btn.classList.add("playing");
             btn.innerHTML = '<i class="fas fa-pause"></i>';
         } else {
-            // Pause if it was playing
+            
             musicPlayer.pause();
         }
     });
@@ -1340,105 +1324,85 @@ songBtns.forEach(btn => {
 
 
 
-/* ✅ Expandable Gallery with Next/Prev */
-
-const galleryItems = document.querySelectorAll('.gallery-item img');
-
-const lightbox = document.getElementById('lightbox');
-
-const lightboxImg = document.getElementById('lightboxImg');
-
-const lightboxClose = document.getElementById('lightboxClose');
-
-const lightboxNext = document.getElementById('lightboxNext');
-
-const lightboxPrev = document.getElementById('lightboxPrev');
+    /* ✅ Expandable Gallery with Next/Prev */
 
 
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxVideo = document.getElementById('lightboxVideo');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxNext = document.getElementById('lightboxNext');
+    const lightboxPrev = document.getElementById('lightboxPrev');
 
-let currentIndex = 0;
+    let currentIndex = 0;
 
+    function showItem(index) {
+    currentIndex = index;
+    const item = galleryItems[index];
+    const type = item.dataset.type || 'image';
+    const src = item.dataset.src || item.querySelector('img').src;
 
+    if(type === 'video') {
+        lightboxImg.style.display = 'none';
+        lightboxVideo.style.display = 'block';
+        lightboxVideo.src = src;
+        lightboxVideo.play();
+    } else {
+        lightboxVideo.style.display = 'none';
+        lightboxVideo.pause();
+        lightboxVideo.src = '';
+        lightboxImg.style.display = 'block';
+        lightboxImg.src = src;
+    }
 
-function showImage(index) {
+    lightbox.classList.add('active');
+    }
 
-  currentIndex = index;
+    galleryItems.forEach((item, i) => {
+    item.addEventListener('click', () => showItem(i));
+    });
 
-  lightboxImg.src = galleryItems[index].src;
-
-  lightbox.classList.add('active');
-
-}
-
-
-
-galleryItems.forEach((img, i) => {
-
-  img.addEventListener('click', () => showImage(i));
-
-});
-
-
-
-lightboxClose.addEventListener('click', () => lightbox.classList.remove('active'));
-
-
-
-lightboxNext.addEventListener('click', (e) => {
-
-  e.stopPropagation();
-
-  currentIndex = (currentIndex + 1) % galleryItems.length;
-
-  lightboxImg.src = galleryItems[currentIndex].src;
-
-});
-
-
-
-lightboxPrev.addEventListener('click', (e) => {
-
-  e.stopPropagation();
-
-  currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-
-  lightboxImg.src = galleryItems[currentIndex].src;
-
-});
-
-
-
-lightbox.addEventListener('click', (e) => {
-
-  if (e.target === lightbox) lightbox.classList.remove('active');
-
-});
-
-
-
-document.addEventListener('keydown', (e) => {
-
-  if (!lightbox.classList.contains('active')) return;
-
-  if (e.key === 'ArrowRight') {
-
-    currentIndex = (currentIndex + 1) % galleryItems.length;
-
-    lightboxImg.src = galleryItems[currentIndex].src;
-
-  } else if (e.key === 'ArrowLeft') {
-
-    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-
-    lightboxImg.src = galleryItems[currentIndex].src;
-
-  } else if (e.key === 'Escape') {
-
+    lightboxClose.addEventListener('click', () => {
     lightbox.classList.remove('active');
+    lightboxVideo.pause();
+    });
 
-  }
+    lightboxNext.addEventListener('click', (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % galleryItems.length;
+    showItem(currentIndex);
+    });
 
-});
+    lightboxPrev.addEventListener('click', (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    showItem(currentIndex);
+    });
+
+    lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+        lightboxVideo.pause();
+    }
+    });
+
+    document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+
+    if (e.key === 'ArrowRight') {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        showItem(currentIndex);
+    } else if (e.key === 'ArrowLeft') {
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        showItem(currentIndex);
+    } else if (e.key === 'Escape') {
+        lightbox.classList.remove('active');
+        lightboxVideo.pause();
+    }
+    });
+
+
 
 </script>
 
